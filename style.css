@@ -1,0 +1,813 @@
+html{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    margin: 0%;
+    overflow-x:hidden;
+}
+
+section{
+    width:100vw;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.safeare{
+    /* margin-left: 100px; */
+    /* margin-right: 100px; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav{
+  display: flex; 
+  align-items: center;
+  justify-content: space-around; 
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  padding: 0%;
+}
+
+nav a{
+    color: white;
+    padding:6px;
+    margin:12px;
+}
+
+nav a:hover{
+    color: #7000ff;
+    background-color:white;
+
+
+}
+
+
+
+.actions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions a{
+    padding: 3px;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("herobg.png");
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: bottom; 
+    max-height: 100vh;
+    height: 93vh;
+}
+
+.services{
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-image: url("opp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+img{
+    /* border: solid; */
+    /* box-shadow: inset 0 0 10px #000000; */
+    box-shadow: 9px 10px 10px 0px rgba(0,0,0,0.26);
+}
+.events{
+    height: 100vh;
+    display: flex;
+    /* flex-direction: row-reverse;          */
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+.policy{
+    height: 100vh;
+    display: flex;
+    /* flex-direction: row-reverse;          */
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+.about{
+    height: 100vh;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.about .oppheading{
+    /* margin-left: 100px; */
+    margin-right: 0%;
+}
+
+.contact{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.customform{
+    display: flex;
+    flex-direction: column;
+    align-items: strech;
+    justify-content: center;
+}
+
+label{
+    margin-top: 10px;
+}
+
+form input{
+    margin: 10px;
+    font-family: 'Plus Jakarta Sans';
+
+}
+
+.secondarybtn{
+    margin-left: 20px;
+}
+
+button{
+  background-color: #7000ff;
+  border: none;
+  color: white;
+  padding: 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: 'Plus Jakarta Sans';
+  margin-top: 14px;
+}
+
+input {
+    padding: 12px;
+    background-color: white;
+    color: black;
+  }
+
+h2{
+    line-height: 32px;
+}
+
+p{
+    line-height: 32px;
+}
+
+li{
+    line-height: 32px;
+    margin-right:24px;
+}
+
+h4{
+    line-height: 32px;
+}
+
+.btn{
+    text-decoration: none;
+    background-color: #7000ff;
+    color: white;
+    min-width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.sbtn{
+    text-decoration: none;
+    background-color: white;
+    color: #7000ff;
+    max-width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.btnset{
+    display: flex;
+}
+.btnset a{
+    padding: 10px;
+}
+
+.heroheading{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 100px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 40px;
+    border-radius: 12px;
+    /* box-shadow: 9px 10px 10px 0px rgba(0,0,0,0.26); */
+}
+
+.heroheading a .btn{
+    margin-top: 20px;
+    font-size: 20px;
+    max-width: max-content;
+    padding: 12px;
+}
+
+.heroheading a{
+    width: fit-content;
+}
+
+.heroheading h1{
+    font-size: 2em;
+}
+.heroheading h2{
+    font-size: 1.2em;
+}
+
+.heroheading p{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.oppheading p{
+    font-size: 1.2em;
+}
+
+.oppheading{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-right: 250px;
+    background-color: black;
+    align-items: flex-start;
+    padding: 40px;
+    border-radius: 12px;
+    /* box-shadow: 9px 10px 10px 0px rgba(0,0,0,0.26); */
+}
+
+.oppheading a .btn{
+    margin-top: 20px;
+    font-size: 20px;
+    max-width: max-content;
+    padding: 12px;
+}
+.oppheading a .sbtn{
+    margin-top: 20px;
+    font-size: 20px;
+    max-width: max-content;
+    padding: 12px;
+}
+
+.heroheading a .sbtn{
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    max-width: max-content;
+    padding: 12px;
+}
+
+.oppheading a{
+    width: fit-content;
+}
+
+.oppheading h1{
+    font-size: 2em;
+}
+
+.about .oppheading .btn{
+    background-color: black;
+    margin: 0%;
+}
+
+.rembg{
+    background-image: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about .oppheading a{
+    padding: 0%;
+    margin: 0%;
+}
+
+.heroimg{
+    height: 100%;
+    width: 40%;
+    /* background-color: white; */
+    /* border-radius: 12px; */
+    margin: 20px;
+    background-image: url("herocar.png");
+    background-repeat: no-repeat;
+    background-position: right 400px;
+    /* margin-left: 40px; */
+    padding: 40px;
+    /* max-height: 100vh; */
+    /* height: 93vh; */
+    /* border-style: solid; */
+    
+}
+
+.logo{
+    width: 30%;
+    /* margin-left: 150px !important; */
+}
+
+.purp{
+    background-color: #7000ff;
+    color: white;
+}
+
+img{
+    border-radius: 12px;
+}
+
+.oppimg{
+    max-width: 50%;
+    max-height: 100vh;
+    margin: 40px;
+    /* border-style: solid; */
+    
+}
+
+.mobinav{
+    display: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mobframe{
+    display: none;
+}
+
+.cover{
+    margin-top: 46px;
+    height: 40vh;
+}
+
+.limos{
+    display: flex;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 48px;
+    /* width: 80vw; */
+}
+
+.card{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 24px; */
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card img{
+    max-width: 240px;
+    width: auto;
+    height: 222px;
+}
+
+.nobd{
+    border: none;
+}
+
+.ecar{
+    width:700px;
+    height:auto;
+}
+
+.policy .heroheading{
+    margin-left:250px;
+}
+
+.customform{
+    background-color:#222222;
+    padding:90px;
+    display:flex;
+}
+
+
+/* [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
+/* [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
+/* [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
+/* [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
+/* [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
+/* [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
+/* [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
+/* [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
+/* [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
+/* [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
+/* [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
+/* [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
+/* [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
+/* [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
+/* [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
+
+@media only screen and (max-width: 1010px){
+
+    .policy .heroheading{
+        margin-left:0px;
+    }
+
+    li{
+        margin-right:none;
+    }
+
+
+    .oppimg{
+        max-width: 85vw;
+        
+    }
+
+    .logo{
+        /* margin-left: 0px !important; */
+    }
+
+    .limos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list{
+        /* flex-direction: column; */
+    }
+
+    .card img{
+        width: 222px;
+    }
+
+    .mobframe{
+        display: block;
+    }
+
+    .pcframe{
+        display: none;
+    }
+
+    html{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        padding: 0%;
+        margin: 0%;
+    }
+    
+    body{
+        margin: 0%;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    
+    
+    nav{
+      display: flex; 
+      flex-flow: wrap;
+      align-items: center;
+      justify-content: space-around; 
+      font-weight: bold;
+      color: white;
+      background-color: black;
+      padding: 12px;
+
+}
+    
+    nav a{
+        color: white;
+    }
+    
+    nav a:hover{
+        color: #7000ff;
+    }
+    
+    
+    
+    .actions{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .actions a{
+        padding: 3px;
+    }
+    
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        
+    }
+    
+    .services{
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .events{
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;         
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        color: black;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .policy{
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;         
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        color: black;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    
+    .about{
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #7000ff;
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .about .oppheading{
+        margin-left: 0px;
+        margin-right: 0%;
+    }
+    
+    .contact{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .customform{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    label{
+        margin-top: 10px;
+    }
+    
+    form input{
+        margin: 10px;
+        font-family: 'Plus Jakarta Sans';
+    
+    }
+    
+    .secondarybtn{
+        margin-left: 10px;
+    }
+    
+    .pcnav{
+        display: none;
+    }
+
+    .mobinav{
+        display: flex;
+        width: 100vw;
+        margin-top: 12px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+
+    button{
+      background-color: #7000ff;
+      border: none;
+      color: white;
+      
+      text-align: center;
+      text-decoration: none;
+      font-size: 22px;
+      font-family: 'Plus Jakarta Sans';
+      margin-top: 18px;
+      margin-bottom: 24px;
+    }
+    
+    input {
+        padding: 12px;
+        background-color: white;
+        color: black;
+      }
+    
+    .btn{
+        text-decoration: none;
+        background-color: #7000ff;
+        color: white;
+        min-width: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        font-weight: bold;
+        
+    }
+    .btn:hover{
+        background-color: white;
+    }
+    
+    .sbtn{
+        text-decoration: none;
+        background-color: white;
+        color: #7000ff;
+        max-width: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        font-weight: bold;
+    }
+
+    .sbtn:hover{
+        background-color: rgb(215, 215, 215);
+    }
+    
+    .btnset{
+        display: flex;
+    }
+    .btnset a{
+        padding: 10px;
+    }
+    
+    .heroheading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        /* text-align: center; */
+        width: 80%;
+        margin-left: 0px;
+    }
+    
+    .heroheading a .btn{
+        margin-top: 20px;
+        font-size: 20px;
+        max-width: max-content;
+        padding: 12px;
+    }
+    
+    .heroheading a{
+        width: fit-content;
+    }
+    
+    .heroheading h1{
+        font-size: 22px;
+    }
+    
+    .oppheading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        /* text-align: center; */
+        width: 80%;
+        margin-right: 0px;
+        
+    }
+    
+    .oppheading a .btn{
+        margin-top: 20px;
+        font-size: 20px;
+        max-width: max-content;
+        padding: 12px;
+    }
+    .oppheading a .sbtn{
+        margin-top: 20px;
+        font-size: 20px;
+        max-width: max-content;
+        padding: 12px;
+    }
+    
+    .heroheading a .sbtn{
+        background-color: black;
+        color: white;
+        margin-top: 20px;
+        font-size: 20px;
+        max-width: max-content;
+        padding: 12px;
+    }
+    
+    .oppheading a{
+        width: fit-content;
+    }
+    
+    .oppheading h1{
+        font-size: 22px;
+    }
+    
+    .about .oppheading .btn{
+        background-color: black;
+        margin: 0%;
+    }
+    
+    h2{
+        font-size: 16px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+    
+    
+    .about .oppheading a{
+        padding: 0%;
+        margin: 0%;
+    }
+    
+    .heroimg{
+        /* max-width: 50%;
+        max-height: 93vh; */
+        width: 100vw;
+        margin: 20px;
+        display: none;
+    }
+    
+    .oppimg{
+        
+        width: 100vw;
+        margin: 20px;
+        
+    }
+    
+
+}

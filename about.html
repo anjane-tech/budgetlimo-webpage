@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <title>Budget Limo - Offering affordable limo services in the twin cities area</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="./"><p>Budget Limo</p></a>
+        <div class="pcnav">
+            <a href="./about.html">about</a> | <a href="./services.html">services</a> | <a href="./events.html">events</a>
+        </div>
+        <div class="actions">
+            <a href="#booknow" class="btn"><div>Book Now</div></a>
+            <a href="tel:00000000" class="secondarybtn"><div><i class="fa fa-phone"></i></div></a>
+        </div>
+        <div class="mobinav">
+            <a href="./about.html">about</a> | <a href="./services.html">services</a> | <a href="./events.html">events</a>
+        </div>
+    </nav>
+    <div class="safeare">
+    <section class="hero">
+        
+            <div class="heroheading">
+                <h1>We are BudgetLimo,
+                    Our mission is to get our customers the 
+                    best deals on limos and provide a
+                    value for money offer at a affordable
+                    price.</h1>
+                <a href="#booknow"><div class="btn">Book Now</div></a>
+            </div>
+            <!-- <img src="hero image.png" alt="" class="heroimg"> -->
+        
+    </section>
+    <section class="services">
+        <div class="oppheading">
+            <h2>We offer Sedans and SUVs with professional drivers. We are safe and secure so you can be assured of the best service possible. Our rates are fixed so that you know exactly what you're paying upfront. We also offer last-minute bookings as well as booking in advance!
+
+                We serve Twin Cities - Minneapolis, Saint Paul and the surrounding area.</h2>
+            <div class="btnset">
+            <a href="./services.html"><div class="btn">Learn more</div></a>
+            <a href="#booknow"><div class="sbtn">Book</div></a>
+            </div>
+        </div>
+        <!-- <img src="hero image.png" alt="" class="oppimg"> -->
+    </section>
+    <section class="events">
+        <div class="heroheading">
+            <h2>We specialize in weddings, airport transportation and executive transportation.
+
+                Our drivers are professionals who will make sure your ride is safe, secure and on time. We take pride in our service, so you can be assured that we will exceed your expectations.
+                
+                We offer fixed rates and we take advanced booking as well as last minute bookings. Our services include Twin Cities - Minneapolis, Saint Paul and the surrounding area. We can even provide you with a car to drive around town if that's what you need!
+                
+                Our service is budget friendly, so there's no reason not to book with us today!
+                </h2>
+            <div class="btnset">
+            <a href="./events.html"><div class="btn">Learn more</div></a>
+            <a href="#booknow"><div class="sbtn">Book</div></a>
+            </div>
+        </div>
+        <img src="hero image.png" alt="" class="oppimg">
+    </section>
+    <section class="about">
+        <div class="oppheading">
+            <h2>We offer Sedans and SUVs with professional drivers. We are safe and secure so you can be assured of the best service possible. Our rates are fixed so that you know exactly what you're paying upfront. We also offer last-minute bookings as well as booking in advance!
+
+                We serve Twin Cities - Minneapolis, Saint Paul and the surrounding area.</h2>
+            <div class="btnset">
+            <a href="./about.html"><div class="btn">Learn more about us</div></a>
+            </div>
+        </div>
+        <img src="hero image.png" alt="" class="oppimg">
+    </section>
+    <section class="contact" id="booknow">
+        <h2>Book your limo right now</h2>
+        <!-- <iframe class="mobframe" src="https://docs.google.com/forms/d/e/1FAIpQLScTP-P-5Q61Lqylb6TcNgnRwRKRasdO7ct7MjLYbtg6UEwUrQ/viewform?embedded=true" width="420" height="1660" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe class="pcframe"  src="https://docs.google.com/forms/d/e/1FAIpQLScTP-P-5Q61Lqylb6TcNgnRwRKRasdO7ct7MjLYbtg6UEwUrQ/viewform?embedded=true" width="700" height="1660" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+        <br><br>
+        <div class="customform">
+            
+                <label for="NAME">First Name</label>
+                <input type="text" name="NAME" id="NAME" value="">
+                <label for="PHONE">Phone Number</label>
+                <input type="tel" name="PHONE" id="PHONE" value="">
+                <label for="DATE">Pickup Date</label>
+                <input type="date" name="DATE" id="DATE" value="">
+                <label for="TIME">Pickup Time</label>
+                <input type="time" name="TIME" id="TIME" value="">
+                <label for="PICKADD">Pickup Address</label>
+                <input type="text" name="PICKADD" id="PICKADD" value="">
+                <label for="DROPADD">Drop Address</label>
+                <input type="text" name="DROPADD" id="DROPADD" value="">
+                <button type="submit" class="btn" style="cursor: pointer;" onclick="submite()">Submit</button>
+            
+        </div>
+    </section>
+    <footer>
+        Budget Limo
+    </footer>
+    </div>
+    <script>
+        var name="",ph="",da="",ti="",pa="",daa="";
+        function submite(){
+            
+            name=document.getElementById("NAME").value;
+            ph=document.getElementById("PHONE").value;
+            da=document.getElementById("DATE").value;
+            ti=document.getElementById("TIME").value;
+            pa=document.getElementById("PICKADD").value;
+            daa=document.getElementById("DROPADD").value;
+            console.log(name+"\n"+ph+"\n"+da+"\n"+ti+"\n"+pa+"\n"+daa+"\n");
+            if(name==""||ph==""||da==""||ti==""||pa==""||daa==""){
+                alert("fill all the fields")
+            }
+            else{
+                url="https://docs.google.com/forms/d/e/1FAIpQLScTP-P-5Q61Lqylb6TcNgnRwRKRasdO7ct7MjLYbtg6UEwUrQ/formResponse?usp=pp_url&entry.145901515="+name+"&entry.248642456="+ph+"&entry.137262613="+da+"&entry.255738977="+ti+"&entry.1977641751="+pa+"&entry.2047244204="+daa+"&submit=Submit";
+                fetch(url);
+                name="";
+                ph="";
+                da="";
+                ti="";
+                pa="";
+                daa="";
+                document.getElementById("NAME").value=name;
+                document.getElementById("PHONE").value=ph;
+                document.getElementById("DATE").value=da;
+                document.getElementById("TIME").value=ti;
+                document.getElementById("PICKADD").value=pa;
+                document.getElementById("DROPADD").value=daa;
+                alert("Form submitted succussfully");
+            }
+            // window.open("https://docs.google.com/forms/d/e/1FAIpQLScTP-P-5Q61Lqylb6TcNgnRwRKRasdO7ct7MjLYbtg6UEwUrQ/viewform?usp=pp_url&entry.484229232="+name+"&entry.1828840875="+ph+"&entry.2139310672="+da+"&entry.1267044698="+ti+"&entry.1927957886="+pa+"&entry.176365857="+daa,'_blank');
+        }
+        
+    
+    </script>
+</body>
+
+</html>

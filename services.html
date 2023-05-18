@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <title>Budget Limo - Offering affordable limo services in the twin cities area</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+</head>
+<body>
+    <nav>
+        <a style="display: flex; justify-content: center; align-items: center; "href="./"><img src="./logo.png" alt="" height="20px" width="20px" style="margin-right: 12px;"><p>Budget Limo</p></a>
+        <div class="pcnav">
+            <!-- <a href="./about.html">about</a> | -->
+             <a href="./services.html">services</a> | <a href="./events.html">events</a>
+        </div>
+        <div class="actions">
+            <a href="#booknow" class="btn"><div>Book Now</div></a>
+            <a href="tel:+16518902400" class="secondarybtn"><div><i class="fa fa-phone"></i></div></a>
+        </div>
+        <div class="mobinav">
+            <!-- <a href="./about.html">about</a> |  -->
+            <a href="./services.html">services</a> | <a href="./events.html">events</a>
+        </div>
+    </nav>
+    <div class="safeare">
+        <br><br>
+        <section class="">
+            
+            <div class="heroheading">
+                <h1>Our sevices include SEDANs and SUVs such as the GMC Yukon XL and the Cadillac Escalade.</h1>
+                
+            </div>
+        
+    </section>
+    <br><br>
+        <section class="services rembg">
+            <div class="oppheading">
+                <h2>GMC YUKON XL</h2>
+                <h2>The 2022 Yukon and Yukon XL 7-Passenger & 8-Passenger SUVs give premium a whole new meaning. This powerful full-size SUV has performance, advanced technology and first-class design.
+                    Travel in luxury with this limo with your family, coworkers and friends.
+                </h2>
+                <div class="btnset">
+                <!-- <a href="./services.html"><div class="btn">Learn more</div></a>
+                <a href="#booknow"><div class="sbtn">Book</div></a> -->
+                </div>
+            </div>
+            <img src="gmcyukonxl.png" alt="" class="oppimg nobd">
+        </section>
+        <section class="events">
+            <div class="heroheading purp">
+                <h2>CADILLAC ESCALADE</h2>
+                <h2>
+                    Escalade has the power to captivate those around you like never before. Its iconic design first announces your arrival, then beckons family, friends and followers to join you on the journey.
+                </h2>
+                <div class="btnset">
+                <!-- <a href="./events.html"><div class="btn">Learn more</div></a>
+                <a href="#booknow"><div class="sbtn">Book</div></a> -->
+                </div>
+            </div>
+            <img src="cadillacescalade.png" alt="" class="oppimg nobd">
+        </section>
+        <section class="contact" id="booknow">
+            <h2>Book your limo right now</h2>
+            <!-- <iframe class="mobframe" src="https://docs.google.com/forms/d/e/1FAIpQLScTP-P-5Q61Lqylb6TcNgnRwRKRasdO7ct7MjLYbtg6UEwUrQ/viewform?embedded=true" width="420" height="1660" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe class="pcframe"  src="https://docs.google.com/forms/d/e/1FAIpQLScTP-P-5Q61Lqylb6TcNgnRwRKRasdO7ct7MjLYbtg6UEwUrQ/viewform?embedded=true" width="700" height="1660" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+            <br><br>
+            <div class="customform">
+                
+                    <label for="NAME">First Name</label>
+                    <input type="text" name="NAME" id="NAME" value="">
+                    <label for="PHONE">Phone Number</label>
+                    <input type="tel" name="PHONE" id="PHONE" value="">
+                    <label for="DATE">Pickup Date</label>
+                    <input type="date" name="DATE" id="DATE" value="">
+                    <label for="TIME">Pickup Time</label>
+                    <input type="time" name="TIME" id="TIME" value="">
+                    <label for="PICKADD">Pickup Address</label>
+                    <input type="text" name="PICKADD" id="PICKADD" value="">
+                    <label for="DROPADD">Drop Address</label>
+                    <input type="text" name="DROPADD" id="DROPADD" value="">
+                    <button type="submit" class="btn" style="cursor: pointer;" onclick="submite()">Submit</button>
+                
+            </div>
+        </section>
+    <footer>
+        
+        <p>Budget Limo - 2008</p>
+        
+        <p>Budgetlimo18@gamil.com</p>
+        <div>
+            <p>
+                <a href="tel:+16518902400">+1 (651) 890 2400</a>
+            </p>
+        </div>
+    </footer>
+    </div>
+    <script>
+        var name="",ph="",da="",ti="",pa="",daa="";
+        function submite(){
+            
+            name=document.getElementById("NAME").value;
+            ph=document.getElementById("PHONE").value;
+            da=document.getElementById("DATE").value;
+            ti=document.getElementById("TIME").value;
+            pa=document.getElementById("PICKADD").value;
+            daa=document.getElementById("DROPADD").value;
+            console.log(name+"\n"+ph+"\n"+da+"\n"+ti+"\n"+pa+"\n"+daa+"\n");
+            if(name==""||ph==""||da==""||ti==""||pa==""||daa==""){
+                alert("fill all the fields")
+            }
+            else{
+                url="https://docs.google.com/forms/d/e/1FAIpQLScTP-P-5Q61Lqylb6TcNgnRwRKRasdO7ct7MjLYbtg6UEwUrQ/formResponse?usp=pp_url&entry.145901515="+name+"&entry.248642456="+ph+"&entry.137262613="+da+"&entry.255738977="+ti+"&entry.1977641751="+pa+"&entry.2047244204="+daa+"&submit=Submit";
+                fetch(url);
+                name="";
+                ph="";
+                da="";
+                ti="";
+                pa="";
+                daa="";
+                document.getElementById("NAME").value=name;
+                document.getElementById("PHONE").value=ph;
+                document.getElementById("DATE").value=da;
+                document.getElementById("TIME").value=ti;
+                document.getElementById("PICKADD").value=pa;
+                document.getElementById("DROPADD").value=daa;
+                alert("Form submitted succussfully");
+            }
+            // window.open("https://docs.google.com/forms/d/e/1FAIpQLScTP-P-5Q61Lqylb6TcNgnRwRKRasdO7ct7MjLYbtg6UEwUrQ/viewform?usp=pp_url&entry.484229232="+name+"&entry.1828840875="+ph+"&entry.2139310672="+da+"&entry.1267044698="+ti+"&entry.1927957886="+pa+"&entry.176365857="+daa,'_blank');
+        }
+        
+    
+    </script>
+</body>
+
+</html>
